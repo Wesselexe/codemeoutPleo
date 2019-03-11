@@ -1,70 +1,58 @@
 import React, { Component } from "react";
 
-import Coder from './Components/Coder/Coder'
-import Reviewer from './Components/Reviewer/Reviewer';
-
-import socketIOClient from "socket.io-client";
-
+import Coder from "./Components/Coder/Coder";
+import Reviewer from "./Components/Reviewer/Reviewer";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      endpoint: "http://localhost:4001",
-      buttonsShow: true, 
+      buttonsShow: true,
       coder: false,
       reviewer: false
     };
-
-    this.handleCoderClick = this.handleCoderClick.bind(this);
-    this.handleReviewerClick = this.handleReviewerClick.bind(this);
-
   }
 
-
-  handleCoderClick() {
+  handleCoderClick = () => {
     this.setState({
       buttonsShow: false,
       coder: true
-    })
-  }
+    });
+  };
 
-  handleReviewerClick() {
+  handleReviewerClick = () => {
     this.setState({
       buttonsShow: false,
       reviewer: true
-    })
-  }
-  
+    });
+  };
+
   render() {
     let game;
 
     if (this.state.coder === true) {
-      game = <Coder />
+      game = <Coder />;
     } else if (this.state.reviewer === true) {
-      game = <Reviewer />
+      game = <Reviewer />;
     }
-
 
     return (
       <div className="App">
-        <p className="App-intro">
-        </p>
-        {
-          this.state.buttonsShow?
-          (
-            <div>
-              <button className="coder" onClick={this.handleCoderClick}>Coder</button>
-              <button className="reviewer" onClick={this.handleReviewerClick}>Reviewer</button>
-            </div>
-          )
-          :null
-        }
+        <p className="App-intro" />
+        {this.state.buttonsShow ? (
+          <div>
+            <button className="coder" onClick={this.handleCoderClick}>
+              Coder
+            </button>
+            <button className="reviewer" onClick={this.handleReviewerClick}>
+              Reviewer
+            </button>
+          </div>
+        ) : null}
         {game}
       </div>
     );
   }
 }
-
 
 export default App;
