@@ -10,13 +10,13 @@ class Coder extends React.Component {
       code: "",
       codeText: "nothing"
     };
+
+    socket().on("updateCode", this.updateCode);
   }
 
   handleCodeChange = event => {
-    //this.setState({code: event.target.value});
     console.log("checking the state before emitting", this.state.codeText);
     socket().emit("codeFromEditor", event.target.value);
-    socket().on("updateCode", this.updateCode);
   };
 
   updateCode = data => {
