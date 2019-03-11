@@ -7,7 +7,6 @@ class Coder extends React.Component {
     super(props);
 
     this.state = {
-      code: "",
       codeText: "nothing"
     };
 
