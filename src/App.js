@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./App.css";
 
 import Coder from "./Components/Coder/Coder";
 import Reviewer from "./Components/Reviewer/Reviewer";
