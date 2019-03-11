@@ -1,7 +1,7 @@
 import React from 'react';
 import './Reviewer.css';
 
-
+import { socket } from "../../socket";
 
 class Reviewer extends React.Component {
     constructor(props) {
@@ -11,20 +11,12 @@ class Reviewer extends React.Component {
             code: "No code yet"
         };
 
-        
-
-        this.socket.on('updateCode', function(data) {
-            updateState(data);
-        })
-
-        const updateState = data => {
-            console.log(data);
-            this.setState({code: data});
-            console.log('constructor', this.state.codeText);
-        };
-
+        socket().on("updateCode", this.updateCode);
     }
 
+    updateCode = data => {
+        this.setState({ code: data });
+      };
 
     render() {
         return (
