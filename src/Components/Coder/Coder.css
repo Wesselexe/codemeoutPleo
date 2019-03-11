@@ -1,0 +1,52 @@
+.window {
+    width: 800px;
+    background-color: blue;
+    text-align: center;
+    height: 500px;
+    display: inline-block
+}
+
+.editor {
+    height: 70%;
+    width: auto;
+    padding: 5%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.body {
+    background-color: black;
+    color: whitesmoke;
+    height: 350px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.options {
+    height: 25%;
+    width: auto;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.code {
+    text-align: left;
+}
+
+.b1 {
+    width: 200px;
+}
+
+.b2 {
+    width: 200px;
+}
+
+.b3 {
+    width: 200px;
+}

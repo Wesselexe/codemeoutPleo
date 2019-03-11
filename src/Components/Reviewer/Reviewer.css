@@ -1,0 +1,56 @@
+.window {
+    width: 800px;
+    background-color: blue;
+    text-align: center;
+    height: 500px;
+    display: inline-block
+}
+
+.input {
+    height: 25%;
+    width: auto;
+    padding: 5%;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.output {
+    height: 25%;
+    width: auto;
+    padding: 5%;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.result {
+    height: 25%;
+    width: auto;
+    padding: 5%;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.options {
+    height: 25%;
+    width: auto;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.code {
+    text-align: left;
+}
+
+.b1 {
+    width: 200px;
+}
+
+.b2 {
+    width: 200px;
+}
+
+.b3 {
+    width: 200px;
+}
