@@ -1,6 +1,8 @@
 import React from 'react';
 import './Reviewer.css';
 
+import Excercise1 from '../../Components/Exercise/Exercise1'
+
 import { socket } from "../../socket";
 
 class Reviewer extends React.Component {
@@ -21,9 +23,7 @@ class Reviewer extends React.Component {
     render() {
         return (
             <div className="window">
-                <div className="input">
-
-                </div>
+                < Excercise1 />
                 <div className="output">
                     <p>{this.state.code}</p>
                 </div>
