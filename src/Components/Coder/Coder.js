@@ -31,7 +31,6 @@ class Coder extends React.Component {
           <div className="code">
             <textarea
               className="body"
-              placeholder="Enter your code here..."
               onChange={this.handleCodeChange}
             />
           </div>
