@@ -10,12 +10,12 @@
     height: 70%;
     width: auto;
     padding: 5%;
-    background-color: black;
+    background-color: #191818;
     color: whitesmoke;
 }
 
 .body {
-    background-color: black;
+    background-color: #3C3C3C;
     color: whitesmoke;
     height: 350px;
     width: 100%;
@@ -29,7 +29,7 @@
 .options {
     height: 25%;
     width: auto;
-    background-color: blanchedalmond;
+    background-color: #c2e0ff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

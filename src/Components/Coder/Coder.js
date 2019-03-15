@@ -9,7 +9,7 @@ class Coder extends React.Component {
     super(props);
 
     this.state = {
-      codeText: "nothing"
+      codeText: "function exercise1(a) {}"
     };
 
     socket().on("updateCode", this.updateCode);
@@ -32,11 +32,12 @@ class Coder extends React.Component {
             <textarea
               className="body"
               onChange={this.handleCodeChange}
+              value={this.state.codeText}
             />
           </div>
         </div>
         <div className="options">
-          <p>{this.state.codeText}</p>
+          <h1>Remember to include a return statement!</h1>
         </div>
       </div>
     );
