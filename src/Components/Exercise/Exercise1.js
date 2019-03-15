@@ -29,8 +29,11 @@ class Exercise1 extends React.Component {
             console.log(result)
 
             if (String(result) === String(this.state.result)) {
-                console.log("SUCCESS")
+                console.log("SUCCESS");
+                this.setState({ output: " 🐪 🐈" });
             } else {
+                this.setState({ output: "" });
+
                 for (let i = 0; i < result.length; i++) {
                     console.log(result[i])
                     if (result[i] === "Cat") {
