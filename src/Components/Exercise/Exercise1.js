@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./Exercise.css"
+
 import { socket } from "../../socket";
 
 class Exercise1 extends React.Component {
@@ -62,11 +64,11 @@ class Exercise1 extends React.Component {
                     <h1>Input</h1>
                     <h1>🐪 🐈 🐕</h1>
                 </div>
-                <div>
+                <div className="result">
                     <h1>Result</h1>
                     <h1>🐪 🐈</h1>
                 </div>
-                <div>
+                <div className="output">
                     <h1>Output</h1>
                     <h1>{this.state.output}</h1>
                 </div>
@@ -76,8 +78,3 @@ class Exercise1 extends React.Component {
 }
 
 export default Exercise1;
-
-//function test(a) {
-//    console.log(a)
-//}
-

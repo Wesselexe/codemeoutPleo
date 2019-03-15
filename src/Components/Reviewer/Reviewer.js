@@ -24,11 +24,6 @@ class Reviewer extends React.Component {
         return (
             <div className="window">
                 < Excercise1 />
-                <div className="options">
-                    <button className="help">
-                        Need help?
-                    </button>
-                </div>
             </div>
         )
     }
