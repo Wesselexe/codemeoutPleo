@@ -9,7 +9,7 @@ class Coder extends React.Component {
     super(props);
 
     this.state = {
-      codeText: "function exercise1(a) {}"
+      codeText: "function exercise(a) {}"
     };
   }
 

@@ -31,7 +31,7 @@ class Reviewer extends React.Component {
         this.setState({
             completed: true,
             selectExercise: false
-        })
+        });
     };
 
     selectExercise = event => {
@@ -39,15 +39,15 @@ class Reviewer extends React.Component {
         this.setState({
             exercise: event.target.value,
             selectExercise: false
-        })
-    }
+        });
+    };
 
     return = () => {
         this.setState({
             exercise: "",
             selectExercise: true
-        })
-    }
+        });
+    };
 
     render() {
 

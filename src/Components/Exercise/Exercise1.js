@@ -39,7 +39,7 @@ class Exercise1 extends React.Component {
         try {
 
             // console.log(this.state.codeText + ` test([${this.state.input.map(it => "'" + it + "'" )}])`)       
-            eval(this.state.codeText + ` result = exercise1([${this.state.input.map(it => "'" + it + "'" )}])`)
+            eval(this.state.codeText + ` result = exercise([${this.state.input.map(it => "'" + it + "'" )}])`)
             
             console.log(result)
 
