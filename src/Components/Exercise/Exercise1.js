@@ -12,16 +12,29 @@ class Exercise1 extends React.Component {
             input: ["Camel", "Cat", "Dog"],
             codeText: "",
             output: "",
-            result: ["Camel", "Cat"]
+            result: ["Camel", "Cat"],
+            completed: false
         }
 
         socket().on("updateCode", this.updateCode);
+
+        socket().on("updateCompletedAssigment", this.completedExercise);
+    }
+
+    completedExercise = data => {
+        this.setState({
+            completed: true
+        })
+    }
+
+    return = () => {
+        socket().emit('return')
     }
 
     updateCode = data => {
         this.setState({ codeText: data });
 
-        let result = "Nothing yet"; 
+        let result = "Nothing yet";
 
         try {
 
@@ -71,6 +84,12 @@ class Exercise1 extends React.Component {
                 <div className="output">
                     <h1>Output</h1>
                     <h1>{this.state.output}</h1>
+                    {this.state.completed ? (
+                        <div>
+                            <h1>🎉 HURRAY! You made it! 🎉</h1>
+                            <button onClick={this.return} className="returnButton">Click here to select new excercise</button>
+                        </div>
+                    ) : null}
                 </div>
             </div>
         )

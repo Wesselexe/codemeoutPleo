@@ -26,6 +26,10 @@ io.on('connection', socket => {
     console.log('Exercise completed:', data)
     io.sockets.emit('updateCompletedAssigment', data)
   })
+
+  socket.on('return', () => {
+    io.sockets.emit('returnToSelection')
+  })
   
   // disconnect is fired when a client leaves the server
   socket.on('disconnect', () => {

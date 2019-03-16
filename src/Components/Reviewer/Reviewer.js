@@ -19,6 +19,8 @@ class Reviewer extends React.Component {
         socket().on("updateCode", this.updateCode);
 
         socket().on('updateCompletedAssigment', this.assigmentCompleted)
+
+        socket().on('returnToSelection', this.return)
     }
 
     updateCode = data => {
@@ -27,7 +29,8 @@ class Reviewer extends React.Component {
 
     assigmentCompleted = data => {
         this.setState({
-            completed: true
+            completed: true,
+            selectExercise: false
         })
     };
 
@@ -39,17 +42,19 @@ class Reviewer extends React.Component {
         })
     }
 
+    return = () => {
+        this.setState({
+            exercise: "",
+            selectExercise: true
+        })
+    }
+
     render() {
 
         let exercise;
-        let congratulation;
 
         if (this.state.exercise === "Exercise 1") {
             exercise = <Exercise1 />;
-        }
-
-        if (this.state.completed === true) {
-            congratulation = <h1>Hurray! you did it!</h1>
         }
 
         return (
