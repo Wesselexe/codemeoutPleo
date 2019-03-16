@@ -1,6 +1,5 @@
 .window {
     width: 800px;
-    background-color: blue;
     text-align: center;
     height: 500px;
     display: inline-block
@@ -26,8 +25,8 @@
     font-weight: bold;
 }
 
-.options {
-    height: 25%;
+.optionsCoder {
+    height: auto;
     width: auto;
     background-color: #c2e0ff;
     display: flex;

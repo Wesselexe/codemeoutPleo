@@ -37,7 +37,7 @@ class Coder extends React.Component {
             />
           </div>
         </div>
-        <div className="options">
+        <div className="optionsCoder">
           <p>Remember to include a return statement!</p>
         </div>
       </div>
