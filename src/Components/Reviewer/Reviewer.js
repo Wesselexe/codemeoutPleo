@@ -35,7 +35,6 @@ class Reviewer extends React.Component {
     };
 
     selectExercise = event => {
-        console.log(event.target.value)
         this.setState({
             exercise: event.target.value,
             selectExercise: false
