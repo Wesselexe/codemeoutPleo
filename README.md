@@ -1,6 +1,7 @@
 # codeMeOut
 
-A multiplayer game where two players work together to write a piece of code. Communication is key to complete the exercise
+A multiplayer game where two players work together to write a piece of code. Communication is key to complete the exercise.
+The "app" is built with React and node.js. Socket.io is used to communicate between the 2 users.
 
 ## Getting Started
 
@@ -45,7 +46,7 @@ You should see
 Listening on port 4001
 ```
 
-Next start the front-end:
+Next open new terminal and start the front-end:
 ```
 cd src
 npm start
@@ -55,7 +56,7 @@ The app should now start on localhost:3000
 
 ## Authors
 
-* **Yours trully Thor** - *Initial work*
+* **Yours truly Thor** - *Initial work*
 
 ## Acknowledgments
 
