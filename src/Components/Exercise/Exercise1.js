@@ -40,8 +40,6 @@ class Exercise1 extends React.Component {
 
             // console.log(this.state.codeText + ` test([${this.state.input.map(it => "'" + it + "'" )}])`)       
             eval(this.state.codeText + ` result = exercise([${this.state.input.map(it => "'" + it + "'" )}])`)
-            
-            console.log(result)
 
             if (String(result) === String(this.state.result)) {
                 this.setState({ output: " 🐪 🐈" });
@@ -50,7 +48,7 @@ class Exercise1 extends React.Component {
                 this.setState({ output: "" });
 
                 for (let i = 0; i < result.length; i++) {
-                    console.log(result[i])
+
                     if (result[i] === "Cat") {
                         this.setState({ output: this.state.output + " 🐈 " })
                     } else if (result[i] === "Camel") {
@@ -60,12 +58,9 @@ class Exercise1 extends React.Component {
                     }
                 }
             }
-
-            console.log(this.state.output)
-
         }
         catch(err) {
-            console.log("Error", err)
+            //console.log("Error", err)
         }
         
       };

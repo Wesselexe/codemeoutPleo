@@ -16,7 +16,6 @@ class Coder extends React.Component {
   }
 
   handleCodeChange = event => {
-    console.log("checking the state before emitting", this.state.codeText);
     this.cursor = event.target.selectionStart;
     this.setState({ codeText: event.target.value });
     socket().emit("codeFromEditor", event.target.value);
