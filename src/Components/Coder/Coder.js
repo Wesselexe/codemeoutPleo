@@ -11,8 +11,6 @@ class Coder extends React.Component {
     this.state = {
       codeText: "function exercise1(a) {}"
     };
-
-    //socket().on("updateCode", this.updateCode);
   }
 
   handleCodeChange = event => {
@@ -25,10 +23,6 @@ class Coder extends React.Component {
   handleCurserPos = event => {
     event.target.selectionStart = this.cursor;
   }
-
-  updateCode = data => {
-    this.setState({ codeText: data });
-  };
 
   render() {
     return (
