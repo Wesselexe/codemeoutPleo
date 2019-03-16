@@ -31,8 +31,8 @@ class Exercise1 extends React.Component {
             console.log(result)
 
             if (String(result) === String(this.state.result)) {
-                console.log("SUCCESS");
                 this.setState({ output: " 🐪 🐈" });
+                socket().emit("completedAssigment", "exercise1")
             } else {
                 this.setState({ output: "" });
 
