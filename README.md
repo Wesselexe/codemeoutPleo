@@ -46,7 +46,7 @@ You should see
 Listening on port 4001
 ```
 
-Next open new terminal and start the front-end:
+Next open a new terminal and start the front-end:
 ```
 cd src
 npm start
