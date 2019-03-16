@@ -42,18 +42,18 @@ class App extends Component {
         <p className="App-intro" />
         {this.state.buttonsShow ? (
           <div>
-            <button className="coder" onClick={this.handleCoderClick}>
-              Coder
-            </button>
-            <button className="reviewer" onClick={this.handleReviewerClick}>
-              Reviewer
-            </button>
             <div>
               <h1>Welcome to this awesome 2 player game!</h1>
               <p>In this game the objective is to work together to create a piece of code that returns a piece of code.</p>
               <p>The catch is that one player will only be able to see the code, while the second person only can see the input</p>
               <p>to the code, the output and the desired result.</p>
             </div>
+            <button className="gameButton" onClick={this.handleCoderClick}>
+              Coder
+            </button>
+            <button className="gameButton" onClick={this.handleReviewerClick}>
+              Reviewer
+            </button>
           </div>
         ) : null}
         {game}
