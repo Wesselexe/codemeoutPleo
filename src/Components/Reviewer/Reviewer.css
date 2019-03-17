@@ -6,31 +6,31 @@
 }
 
 .input {
-    height: 25%;
+    height: 15%;
     width: auto;
-    padding: 5%;
+    padding: 1%;
     background-color: grey;
     color: whitesmoke;
 }
 
 .output {
-    height: 25%;
+    height: 15%;
     width: auto;
-    padding: 5%;
+    padding: 1%;
     background-color: grey;
     color: whitesmoke;
 }
 
 .result {
-    height: 25%;
+    height: 15%;
     width: auto;
-    padding: 5%;
+    padding: 1%;
     background-color: grey;
     color: whitesmoke;
 }
 
 .options {
-    height: 25%;
+    height: 15%;
     width: auto;
     background-color: blanchedalmond;
     display: flex;
