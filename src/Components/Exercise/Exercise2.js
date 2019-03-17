@@ -45,7 +45,10 @@ class Exercise2 extends React.Component {
                 this.setState({ output: "🐄 🐒 🦉" });
                 socket().emit("completedAssigment", "exercise2")
             } else {
-                this.setState({ output: "" });
+                this.setState({
+                    output: "",
+                    completed: false
+                });
 
                 for (let i = 0; i < result.length; i++) {
 
