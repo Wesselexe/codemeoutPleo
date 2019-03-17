@@ -13,6 +13,10 @@ const server = http.createServer(app)
 // This creates our socket using the instance of the server
 const io = socketIO(server)
 
+app.get('*', (req, res) => {
+  res.sendFile(__dirname + '/../build/index.html');
+});
+
 // This is what the socket.io syntax is like, we will work this later
 io.on('connection', socket => {
   console.log('New client connected')
