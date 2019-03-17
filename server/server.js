@@ -14,7 +14,7 @@ const server = http.createServer(app)
 const io = socketIO(server)
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/../public/index.html');
+  res.sendFile(__dirname + '/../build/index.html');
 });
 
 // This is what the socket.io syntax is like, we will work this later
