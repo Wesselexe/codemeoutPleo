@@ -7,6 +7,6 @@ export const socket = () => {
 };
 
 export const initSocket = callback => {
-  _socket = io("http://localhost:4001");
+  _socket = io("https://codemeout.netlify.com/");
   callback();
 };
