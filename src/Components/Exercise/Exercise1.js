@@ -22,9 +22,11 @@ class Exercise1 extends React.Component {
     }
 
     completedExercise = data => {
-        this.setState({
-            completed: true
-        })
+        if (data === "exercise1") {
+            this.setState({
+                completed: true
+            })
+        }
     }
 
     return = () => {
