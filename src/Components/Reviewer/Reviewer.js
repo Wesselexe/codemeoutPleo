@@ -3,6 +3,7 @@ import './Reviewer.css';
 
 import Exercise1 from '../../Components/Exercise/Exercise1'
 import Exercise2 from '../../Components/Exercise/Exercise2'
+import Exercise3 from '../../Components/Exercise/Exercise3'
 
 import { socket } from "../../socket";
 
@@ -60,6 +61,9 @@ class Reviewer extends React.Component {
             case "Exercise 2":
                 exercise = <Exercise2 />;
                 break;
+            case "Exercise 3":
+                exercise = <Exercise3 />;
+                break;
             default:
                 exercise = "";
         }
@@ -71,6 +75,7 @@ class Reviewer extends React.Component {
                         <p>Select excercise</p>
                         <button className="gameButton" value="Exercise 1" onClick={this.selectExercise}>Exercise 1</button>
                         <button className="gameButton" value="Exercise 2" onClick={this.selectExercise}>Exercise 2</button>
+                        <button className="gameButton" value="Exercise 3" onClick={this.selectExercise}>Exercise 3</button>
                     </div>
                 ) : null}
                 {exercise}
