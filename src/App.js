@@ -14,6 +14,10 @@ class App extends Component {
     };
   }
 
+  componentDidMount(){
+    document.title = "CodeMeOut"
+  }
+
   handleCoderClick = () => {
     this.setState({
       buttonsShow: false,
