@@ -37,3 +37,8 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.lists {
+    background-color: whitesmoke;
+    padding: 2px;
+}

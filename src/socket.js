@@ -7,6 +7,6 @@ export const socket = () => {
 };
 
 export const initSocket = callback => {
-  _socket = io("http://localhost:4001");
+  _socket = io("http://10.10.1.34:4001/");
   callback();
 };
