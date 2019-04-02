@@ -44,7 +44,7 @@ class Exercise1 extends React.Component {
             eval(this.state.codeText + ` result = exercise([${this.state.input.map(it => "'" + it + "'" )}])`)
 
             if (String(result) === String(this.state.result)) {
-                this.setState({ output: " 🐪 🐈" });
+                this.setState({ output: "🐪 🐈" });
                 socket().emit("completedAssigment", "exercise1")
             } else {
                 this.setState({
