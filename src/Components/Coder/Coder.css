@@ -30,7 +30,6 @@
     width: auto;
     background-color: #c2e0ff;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 

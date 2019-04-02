@@ -46,6 +46,7 @@ class Coder extends React.Component {
         </div>
         <div className="optionsCoder">
           <p>Remember to include a return statement!</p>
+          <p>Keep the function name and parameter as default, otherwise stuff breaks 😐</p>
         </div>
       </div>
     );
