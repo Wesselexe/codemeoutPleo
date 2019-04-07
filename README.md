@@ -54,10 +54,6 @@ npm start
 
 The app should now start on localhost:3000
 
-## Authors
-
-* **Yours truly Thor** - *Initial work*
-
-## Acknowledgments
-
-* Diego!
+```
+Check src/socket.js to add your local ip address to play locally on your network
+```
